@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        background-color: #fd4e4e;
+        min-height: 100vh;
+        
+    }
+    .container{
+        display: flex;
+        min-height: 500px;
+        max-width:800px;
+        border: 2px solid black;
+        margin: 2rem;
+      
+        
+        /* margin-top: 100px; */
+        
+        
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5rem;
+        gap: 1rem;
+        max-width: 100%;
+        box-sizing: border-box;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: whitesmoke;
+    }
+    h2{
+        font-size: 2rem;
+        line-height: 0;
+        
+    }
+    .box{
+        padding: 12px;
+        
+        border: 1px solid black;
+        outline: none;
+        border-radius:20px;
+    }
+    #submit{
+         width: 150px;
+       
+        padding: 12px 30px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        /* text-align: center; */
+
+    }
+    #submit:hover{
+        cursor: pointer;
+        background-color: #750000;
+    }
+    .side{ 
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        width: 100%;
+        background-color: #750000;
+    }
+    img{
+        width: 100%;
+        object-fit: contain;
+         
+    }
+    @media screen and (max-width: 968px) {
+    div.container 
+        {
+            display: flex;
+            flex-direction: column-reverse;
+           
+            height:fit-content !important;
+            width: fit-content !important;
+            
+            border: none;
+            padding-right: 0;
+            
+           }
+           body{
+            background-color: lightblue;
+           }
+           h2{
+            font-size: 20px;
+           }
+           img{
+            aspect-ratio: 4/3;
+           }
+           
+        
+        
+      
+}
+    
+
+
+
+</style>
+<body>
+        <div class="container">
+            
+                <form action="" class="form">
+                    <h2>SIGN IN</h2>
+                    <input type="email" name="email" class="box" placeholder="enter email">
+                    <input type="password" name="password"  class="box" placeholder="enter password">
+                    <input type="submit" value="SIGN IN" id="submit"> 
+                </form>
+               <div class="side">
+                <img src="sid.png" alt="">
+               </div>
+        </div>
+        
+</body>
+</html>
